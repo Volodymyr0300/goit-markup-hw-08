@@ -1,8 +1,21 @@
 .container {
-  width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    background-color: red;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 738px;
+    background-color: teal;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    background-color: green;
+  }
 }
 .header-container {
   display: flex;

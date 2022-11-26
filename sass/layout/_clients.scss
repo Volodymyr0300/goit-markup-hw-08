@@ -1,0 +1,48 @@
+.clients--display {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.clients-title--display {
+  color: #212121;
+  margin-bottom: 50px;
+}
+.clients-list--display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 92px;
+}
+.clients-item--display {
+  height: 92px;
+}
+.clients-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+}
+.clients-link--display {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-link .clients-icon--display {
+  transition: var(--trans-fill);
+}
+.clients-link:hover .clients-icon--display,
+.clients-link:focus .clients-icon--display {
+  fill: #2196f3;
+}
+.clients-icon--display {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}

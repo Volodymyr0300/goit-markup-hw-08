@@ -1,0 +1,102 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav {
+  display: flex;
+}
+.header-nav-menu {
+  display: flex;
+  margin-left: 93px;
+}
+.header-nav-menu-li {
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+.header-studio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.header-porfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.header-contacts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.header-nav-address-flex {
+  display: flex;
+  margin-left: 318px;
+  align-items: center;
+}
+.header-nav-address-li2 {
+  margin-left: 24px;
+}
+.header-email {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: block;
+}
+.header-email,
+.header-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-header {
+  fill: #757575;
+}
+.icon-mail {
+  margin-right: 10px;
+}
+.icon-tel {
+  margin-right: 10px;
+}
+.header-tel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: flex;
+}
+.header-nav-address-li1:hover .icon-mail,
+.header-nav-address-li1:focus .icon-mail,
+.header-nav-address-li2:hover .icon-tel,
+.header-nav-address-li2:focus .icon-tel {
+  fill: currentColor;
+}
+.icon-mail,
+.icon-tel {
+  transition: var(--trans-fill);
+}

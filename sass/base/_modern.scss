@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.link {
+  text-decoration: none;
+  transition: var(--trans-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--hover-focus);
+}

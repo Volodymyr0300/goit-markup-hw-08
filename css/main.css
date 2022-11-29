@@ -755,11 +755,6 @@ ul {
   z-index: var(--index-backdrop);
 }
 
-/* 
-!!! |=================================
-!!! | footer
-!!! |=================================
-*/
 .footer {
   background-color: var(--footer-background-color);
   padding-top: 60px;
@@ -801,7 +796,7 @@ ul {
 
 /* 
   !!! |=================================
-  !!! | footer form
+  !!! | form
   !!! |=================================
   */
 .footer-form-email {
@@ -936,10 +931,19 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
 }
 .team-item-social-list--display:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .team-item-social-list--display {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item-social-list--display {
+    margin-bottom: 30px;
+  }
 }
 
 .team-item-social-list-icon__link--display {
@@ -1089,8 +1093,11 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
+
 .team-item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1099,17 +1106,39 @@ ul {
 
 .team-item--display {
   background-color: var(--background-color-white);
-  width: 270px;
-  height: 428px;
+  width: 450px;
+  height: 622px;
+}
+@media screen and (max-width: 768px) {
+  .team-item--display:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-item--display {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item--display:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .team-item--display:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .team-item--display {
+    width: 270px;
+    height: 428px;
+  }
   .team-item--display:not(:first-child) {
     margin-left: 30px;
   }
-}
-
-.team-item__img--display {
-  margin-bottom: 30px;
+  .team-item--display:only-child {
+    margin-bottom: 0px;
+  }
 }
 
 .team-item__person {
@@ -1128,6 +1157,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .team-item__position {

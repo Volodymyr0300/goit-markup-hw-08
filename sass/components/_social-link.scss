@@ -47,10 +47,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 
   &:not(:last-child) {
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: $des-1) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $des) {
+    margin-bottom: 30px;
   }
 }
 .team-item-social-list-icon__link--display {

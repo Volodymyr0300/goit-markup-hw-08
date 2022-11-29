@@ -1,14 +1,23 @@
 .team--display {
   background-color: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @extend %section-pad;
 }
 .team-title--display {
   color: var(--text-color);
-  margin-bottom: 50px;
+
+  margin-bottom: 30px;
+  @media screen and (min-width: $des) {
+    margin-bottom: 50px;
+  }
 }
 .team-list--display {
-  display: flex;
+  display: block;
+  @media screen and (min-width: $tab) {
+    display: flex;
+  }
+  @media screen and (min-width: $des) {
+  }
 }
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,14 +27,18 @@
 .team-item--display {
   background-color: var(--background-color-white);
   width: 270px;
+  //   width: 400px;
   height: 428px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (min-width: $des) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 .team-item__img--display {
   margin-bottom: 30px;
+  //   width: 400px;
 }
 .team-item__person {
   font-weight: 500;

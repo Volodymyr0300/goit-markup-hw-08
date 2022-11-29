@@ -9,21 +9,32 @@
     ),
     url(../images/background-main-image.jpg);
   background-repeat: no-repeat;
-  max-width: 1600px;
   background-position: center;
   margin: 0 auto;
+  max-width: 480px;
+  @media screen and (min-width: $tab) and (max-width: $des-1) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: $des) {
+    max-width: 1600px;
+  }
 }
 .main-section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color-white);
   margin-bottom: 30px;
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: $des-1) {
+    max-width: 360px;
+  }
+  @media screen and (min-width: $des) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

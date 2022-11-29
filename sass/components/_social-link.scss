@@ -1,5 +1,13 @@
 .footer-connecting-container {
-  margin-left: 70px;
+  @media screen and (max-width: $tab) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $tab) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $des) {
+    margin-left: 70px;
+  }
 }
 .footer-connecting-title {
   text-transform: uppercase;
@@ -11,8 +19,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-
   margin-bottom: 20px;
+
+  @media screen and (max-width: $des-1) {
+    text-align: center;
+  }
 }
 .footer-connecting-social-container {
   display: flex;
@@ -67,6 +78,7 @@
   justify-content: center;
   border-radius: 50%;
   transition: var(--trans-bc);
+  background-color: rgba(255, 255, 255, 0.1);
 
   &:hover,
   &:focus {

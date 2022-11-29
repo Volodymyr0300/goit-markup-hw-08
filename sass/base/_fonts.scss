@@ -2,8 +2,17 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: $des-1) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media screen and (min-width: $des) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }

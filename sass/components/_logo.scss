@@ -26,6 +26,11 @@
   text-decoration: none;
   display: inline-block;
   margin-bottom: 20px;
+
+  @media screen and (max-width: $des) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer-logo1 {
   color: var(--header-logo-color1);

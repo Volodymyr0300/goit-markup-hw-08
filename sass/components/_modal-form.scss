@@ -1,13 +1,23 @@
 .before-modal-text {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-top: 40px;
   margin-bottom: 12px;
+
+  @media screen and (max-width: $des-1) {
+    width: 370px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 .form-group {
   margin-left: 40px;
@@ -66,10 +76,16 @@
 .form-comment-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
+  @media screen and (max-width: $des-1) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .form-comment-area {
   font-style: normal;
@@ -111,8 +127,13 @@
   width: 16px;
   height: 15px;
   top: 5px;
-  left: 13px;
   background-size: contain;
+  @media screen and (max-width: $des-1) {
+    left: 3px;
+  }
+  @media screen and (min-width: $des) {
+    left: 8px;
+  }
 }
 .form-field-input:checked + .form-field-checkbox {
   background-image: url(../images/icon-checked.svg);
@@ -122,11 +143,18 @@
 .form-field-input-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 8px;
+  @media screen and (max-width: $des-1) {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 24px;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 8px;
+  }
 }
 .field-input-link {
   font-style: normal;

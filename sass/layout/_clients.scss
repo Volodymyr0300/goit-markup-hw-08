@@ -1,22 +1,47 @@
 .clients--display {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  max-width: 1600px;
+  @extend %section-pad;
+
+  @media screen and (min-width: $des) {
+    max-width: 1600px;
+  }
+
   margin: 0 auto;
 }
+
 .clients-title--display {
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: $des) {
+    margin-bottom: 50px;
+  }
 }
 .clients-list--display {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
   gap: 30px;
-  height: 92px;
+
+  @media screen and (min-width: $tab) {
+  }
+
+  @media screen and (min-width: $des) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
 }
+
 .clients-item--display {
   height: 92px;
+  max-width: 210px;
+  width: 50%;
+  @media screen and (min-width: $tab) {
+    max-width: 226px;
+  }
+  @media screen and (min-width: $des) {
+    width: 170px;
+  }
 }
 .clients-link {
   border: 1px solid #afb1b8;
@@ -28,7 +53,7 @@
   }
 }
 .clients-link--display {
-  width: 170px;
+  //   width: 170px;
   height: 92px;
   display: flex;
   align-items: center;

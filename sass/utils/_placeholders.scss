@@ -4,10 +4,31 @@ $mob: 480px;
 $tab: 768px;
 $des: 1200px;
 
-// ! placeholders
-%mob-tab-pad-top {
-  padding-top: 60px;
+$mob-1: 479px;
+$tab-1: 767.98;
+$des-1: 1199px;
+
+// // ! placeholders
+// %mob-tab-pad-top {
+//   padding-top: 60px;
+// }
+// %mob-tab-pad-bot {
+//   padding-bottom: 60px;
+// }
+
+%section-pad {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-%mob-tab-pad-bot {
-  padding-bottom: 60px;
+
+@media screen and (min-width: $tab) {
+}
+@media screen and (min-width: $des) {
 }

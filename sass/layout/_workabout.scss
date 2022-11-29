@@ -1,5 +1,14 @@
+.workabout {
+  @media screen and (max-width: $des-1) {
+    display: none;
+  }
+}
 .workabout--display {
   padding-bottom: 94px;
+}
+.workabout__list--container {
+  display: flex;
+  margin-top: 50px;
 }
 .workabout__title--color {
   color: var(--text-color);

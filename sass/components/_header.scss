@@ -3,13 +3,51 @@
 }
 .header-container {
   display: flex;
+  //   position: relative;
 }
 .header-nav {
   display: flex;
 }
+// .header-btn {
+//   display: inline-flex;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+// }
+// .header-btn .header-btn__icon-cross {
+//   display: none;
+// }
+// .header-btn.is-open .header-btn__icon-cross {
+//   display: block;
+// }
+// .header-btn.is-open .header-btn__icon-menu {
+//   display: none;
+// }
+// .header-btn__icon-cross {
+// }
+// .header-btn__icon-menu {
+// }
+// .header-btn-mob-menu-container {
+//   width: 100%;
+//   height: 796px;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   display: none;
+//   &.is-open {
+//     display: block;
+//   }
+//   background-color: red;
+// }
 .header-nav-menu {
   display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: $tab) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $des) {
+    margin-left: 93px;
+  }
 }
 .header-nav-menu-li {
   &:not(:first-child) {
@@ -54,20 +92,45 @@
 }
 .header-nav-address-flex {
   display: flex;
-  margin-left: 318px;
-  align-items: center;
+
+  @media screen and (min-width: $tab) and (max-width: $des-1) {
+    margin-left: 97px;
+    flex-direction: column;
+    align-items: start;
+  }
+  @media screen and (min-width: $des) {
+    margin-left: 318px;
+    align-items: center;
+  }
+}
+.header-nav-address-li1 {
+  @media screen and (min-width: $tab) and (max-width: $des-1) {
+    padding-top: 21px;
+    padding-bottom: 10px;
+  }
 }
 .header-nav-address-li2 {
-  margin-left: 24px;
+  @media screen and (min-width: $tab) and (max-width: $des-1) {
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: $des) {
+    margin-left: 24px;
+  }
 }
 .header-email {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
   display: block;
+  @media screen and (max-width: $des-1) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .header-email,
 .header-tel {
@@ -78,20 +141,30 @@
 .icons-header {
   fill: #757575;
 }
-.icon-mail {
-  margin-right: 10px;
-}
+.icon-mail,
 .icon-tel {
-  margin-right: 10px;
+  @media screen and (min-width: $tab) and (max-width: $des-1) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: $des) {
+    margin-right: 10px;
+  }
 }
 .header-tel {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
   display: flex;
+
+  @media screen and (max-width: $des-1) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .header-nav-address-li1:hover .icon-mail,
 .header-nav-address-li1:focus .icon-mail,

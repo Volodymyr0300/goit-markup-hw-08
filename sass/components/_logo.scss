@@ -2,12 +2,18 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: flex;
   align-items: center;
+  @media screen and (max-width: $des-1) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: $des) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .header-logo1 {
   color: var(--header-logo-color1);

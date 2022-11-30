@@ -1,3 +1,8 @@
+/* 
+!!! |=================================
+!!! | main button
+!!! |=================================
+*/
 .main-section-button {
   font-family: "Roboto", sans-serif;
   background-color: var(--hover-focus);
@@ -85,14 +90,20 @@
 !!! | portfolio buttons
 !!! |=================================
 */
-.portfolio-section--display {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .portfolio-btnlist--display {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @media screen and (max-width: $tab) {
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 15px;
+  }
+  @media screen and (min-width: $tab) {
+  }
+  @media screen and (min-width: $des) {
+  }
 }
 .portfolio-btn {
   font-family: "Roboto", sans-serif;

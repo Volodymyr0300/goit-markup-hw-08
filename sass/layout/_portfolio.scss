@@ -1,19 +1,36 @@
+.portfolio-section--display {
+  @extend %section-pad;
+}
 .main-portfolio {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  @media screen and (min-width: $tab) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .main-portfolio-containers {
   background-color: var(--background-color-white);
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+
+  @media screen and (max-width: $tab) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tab) {
+    width: 354px;
+  }
+  @media screen and (min-width: $des) {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 .main-portfolio-containers {
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-  &:nth-child(n + 7) {
-    margin-bottom: 0px;
+  @media screen and (min-width: $des) {
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+    &:nth-child(n + 7) {
+      margin-bottom: 0px;
+    }
   }
 }
 .main-portfolio-link {

@@ -3,45 +3,15 @@
 }
 .header-container {
   display: flex;
-  //   position: relative;
 }
 .header-nav {
   display: flex;
 }
-// .header-btn {
-//   display: inline-flex;
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-//   background-color: transparent;
-// }
-// .header-btn .header-btn__icon-cross {
-//   display: none;
-// }
-// .header-btn.is-open .header-btn__icon-cross {
-//   display: block;
-// }
-// .header-btn.is-open .header-btn__icon-menu {
-//   display: none;
-// }
-// .header-btn__icon-cross {
-// }
-// .header-btn__icon-menu {
-// }
-// .header-btn-mob-menu-container {
-//   width: 100%;
-//   height: 796px;
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   display: none;
-//   &.is-open {
-//     display: block;
-//   }
-//   background-color: red;
-// }
 .header-nav-menu {
   display: flex;
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
   @media screen and (min-width: $tab) {
     margin-left: 88px;
   }
@@ -92,6 +62,9 @@
 }
 .header-nav-address-flex {
   display: flex;
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
 
   @media screen and (min-width: $tab) and (max-width: $des-1) {
     margin-left: 97px;

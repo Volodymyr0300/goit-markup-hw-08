@@ -2,23 +2,70 @@
   background-color: var(--main-section-background);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background-main-image.jpg);
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto;
-  max-width: 480px;
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
-    max-width: 768px;
+  background-size: cover;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/header-img_480.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/main/header-img_960.jpg);
+    }
   }
-  @media screen and (min-width: $des) {
+  @media screen and (min-width: 481px) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/header-img_768.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/main/header-img_1536.jpg);
+    }
+  }
+  @media screen and (min-width: 769px) {
     max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/header-img_1600.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/main/header-img_3200.jpg);
+    }
   }
 }
+
 .main-section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;

@@ -56,6 +56,9 @@
   }
 }
 .team-item__img--display {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .team-item__person {
   font-weight: 500;

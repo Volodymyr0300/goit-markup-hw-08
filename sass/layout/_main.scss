@@ -1,7 +1,5 @@
 .main-section {
   background-color: var(--main-section-background);
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,6 +7,8 @@
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -47,6 +47,8 @@
   }
   @media screen and (min-width: 769px) {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

@@ -35,7 +35,7 @@
   @media screen and (min-width: $tab) {
     width: 354px;
     height: 536px;
-    @media screen and (max-width: $des-1) {
+    @media screen and (max-width: 1199px) {
       &:nth-child(-n + 2) {
         margin-bottom: 30px;
       }

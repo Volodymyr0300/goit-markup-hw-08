@@ -6,7 +6,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     font-size: 24px;
     line-height: 1.16;
   }
@@ -33,7 +33,7 @@
   display: inline-block;
   margin-bottom: 20px;
 
-  @media screen and (max-width: $des) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
   }

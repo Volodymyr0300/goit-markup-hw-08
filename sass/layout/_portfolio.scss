@@ -17,7 +17,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
+  @media screen and (min-width: $tab) and (max-width: 1199px) {
     width: 354px;
     &:nth-child(-n + 7) {
       margin-bottom: 30px;
@@ -46,7 +46,7 @@
     flex-direction: column;
     height: 100%;
   }
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
+  @media screen and (min-width: $tab) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -69,11 +69,9 @@
   @media screen and (max-width: $tab) {
     width: 450px;
   }
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
+  @media screen and (min-width: $tab) and (max-width: 1199px) {
     width: 354px;
     height: 294px;
-  }
-  @media screen and (min-width: $des) {
   }
 }
 .overlay {
@@ -109,7 +107,7 @@
   border-top: none;
   padding: 20px 24px;
 
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
+  @media screen and (min-width: $tab) and (max-width: 1199px) {
     flex-grow: 1;
   }
 }

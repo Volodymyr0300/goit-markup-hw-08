@@ -281,7 +281,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   .portfolio-btnlist--display {
@@ -362,7 +362,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .header-nav-menu {
     display: none;
   }
@@ -429,7 +429,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .header-nav-address-flex {
     display: none;
   }
@@ -480,7 +480,7 @@ ul {
   color: var(--main-color);
   display: block;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .header-email {
     font-size: 12px;
     line-height: 1.16;
@@ -510,7 +510,7 @@ ul {
   fill: #757575;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1201px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .icon-mail,
 .icon-tel {
     margin-right: 8px;
@@ -532,7 +532,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .header-tel {
     font-size: 12px;
     line-height: 1.16;
@@ -682,7 +682,7 @@ ul {
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -704,7 +704,7 @@ ul {
   margin-top: 40px;
   margin-bottom: 12px;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .before-modal-text {
     width: 370px;
     margin-left: 40px;
@@ -808,7 +808,7 @@ ul {
   letter-spacing: 0.01em;
   color: #757575;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .form-comment-text {
     font-size: 14px;
     line-height: 16px;
@@ -875,7 +875,7 @@ ul {
   top: 5px;
   background-size: contain;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .form-field-checkbox {
     left: 3px;
   }
@@ -898,7 +898,7 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .form-field-input-text {
     font-size: 12px;
     line-height: 14px;
@@ -1666,9 +1666,6 @@ ul {
   margin-bottom: 16px;
 }
 
-.main-portfolio {
-  display: block;
-}
 @media screen and (min-width: 768px) {
   .main-portfolio {
     display: -webkit-box;
@@ -1682,9 +1679,9 @@ ul {
 .main-portfolio-containers {
   background-color: var(--background-color-white);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .main-portfolio-containers {
-    width: 450px;
+    max-width: 450px;
     height: 404px;
   }
   .main-portfolio-containers:not(:last-child) {
@@ -1716,7 +1713,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .main-portfolio-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1755,9 +1752,11 @@ ul {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .main-portfolio-img {
-    width: 450px;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -2036,7 +2035,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .main-section-title {
     max-width: 360px;
   }

@@ -10,7 +10,7 @@
 }
 .header-nav-menu {
   display: flex;
-  @media screen and (max-width: $tab) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   @media screen and (min-width: $tab) {
@@ -64,7 +64,7 @@
 }
 .header-nav-address-flex {
   display: flex;
-  @media screen and (max-width: $tab) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
@@ -98,7 +98,7 @@
   letter-spacing: 0.02em;
   color: var(--main-color);
   display: block;
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.16;
   }
@@ -118,7 +118,7 @@
 }
 .icon-mail,
 .icon-tel {
-  @media screen and (min-width: $tab) and (max-width: $des-1) {
+  @media screen and (min-width: $tab) and (max-width: 1199px) {
     margin-right: 8px;
   }
   @media screen and (min-width: $des) {
@@ -132,7 +132,7 @@
   color: var(--main-color);
   display: flex;
 
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.16;
   }

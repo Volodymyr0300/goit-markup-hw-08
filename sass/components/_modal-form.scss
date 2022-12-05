@@ -8,7 +8,7 @@
   margin-top: 40px;
   margin-bottom: 12px;
 
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
     margin-left: 40px;
     font-size: 20px;
@@ -78,7 +78,7 @@
   font-weight: 400;
   letter-spacing: 0.01em;
   color: #757575;
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     font-size: 14px;
     line-height: 16px;
   }
@@ -128,7 +128,7 @@
   height: 15px;
   top: 5px;
   background-size: contain;
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     left: 3px;
   }
   @media screen and (min-width: $des) {
@@ -145,7 +145,7 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
-  @media screen and (max-width: $des-1) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 14px;
     margin-left: 24px;
